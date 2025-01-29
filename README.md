@@ -2,7 +2,7 @@
 <img src="https://github.com/user-attachments/assets/c46376f6-f693-497c-bce2-87110e834d6a" alt="osTicket logo"/>
 </p>
 
-# osTicket Installation Guide: A Step-by-Step Walkthrough
+# osTicket Prerequisites and Installation Guide: A Step-by-Step Walkthrough
 
 This guide provides a comprehensive, one-of-a-kind approach to installing and configuring the open-source ticketing system, osTicket, on a Windows 10 Virtual Machine within Microsoft Azure. Follow these instructions carefully to ensure a smooth setup process.
 
