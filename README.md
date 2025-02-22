@@ -14,7 +14,7 @@ This guide provides a comprehensive, one-of-a-kind approach to installing and co
 - **Internet Information Services (IIS)** (Web Server Management)
 
 ## **Operating System Used**
-- **Windows 10 Pro (Version 21H2)**
+- **Windows 10 Pro (Version 22H2)**
 
 ## **Essential Components for Installation**
 Ensure the following components are readily available for a successful setup:
