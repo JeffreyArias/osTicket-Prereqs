@@ -34,87 +34,79 @@ Ensure the following components are readily available for a successful setup:
 
 ### **Step 1: Setting Up the Virtual Machine**
 Access the [Azure Portal](https://portal.azure.com/).
- 
-![Create](https://github.com/user-attachments/assets/3aea07b1-f5b1-4717-9494-4a1c4c64712a)
 Create a new Virtual Machine (VM)
-
-![Step 2 and 3](https://github.com/user-attachments/assets/a1dd6779-aae0-4b36-839a-bc026f7cb2c2)
 Select **Windows 10 Pro, Version 22H2** and allocate a minimum of **2 vCPUs** and **16 GB RAM** for optimal performance.
-
-![Public IP](https://github.com/user-attachments/assets/96093f9c-04c5-4e7c-a1d1-2bb22b6272de)
 Once provisioned, locate the **public IP address** of your VM.
-
-![RDP](https://github.com/user-attachments/assets/eadb9272-49da-4d76-8363-b7cd4e5fa874)
 Use **Remote Desktop Connection (RDP)** to connect to the VM.
 
 ---
 
 ### **Step 2: Enabling IIS on Windows 10**
-1. Open **Control Panel** → **Programs** → **Turn Windows features on or off**.
-2. Locate **Internet Information Services (IIS)** and enable the following components:
+Open **Control Panel** → **Programs** → **Turn Windows features on or off**.
+Locate **Internet Information Services (IIS)** and enable the following components:
    - **World Wide Web Services** → **Application Development Features**:
      - [✔] CGI
    - **Common HTTP Features** (Ensure all options are checked)
-3. Apply changes and allow Windows to install IIS.
-4. Verify installation by opening a browser and navigating to **127.0.0.1**—you should see the IIS default page.
+Apply changes and allow Windows to install IIS.
+Verify installation by opening a browser and navigating to **127.0.0.1**—you should see the IIS default page.
 
 ---
 
 ### **Step 3: Installing Required IIS Modules**
-1. Install **PHP Manager for IIS** (_PHPManagerForIIS_V1.5.0.msi_).
-2. Install **IIS Rewrite Module** (_rewrite_amd64_en-US.msi_).
+Install **PHP Manager for IIS** (_PHPManagerForIIS_V1.5.0.msi_).
+Install **IIS Rewrite Module** (_rewrite_amd64_en-US.msi_).
 
 ---
 
 ### **Step 4: Setting Up PHP**
-1. Create a new folder **C:\PHP**.
-2. Download and extract **PHP 7.3.8** (_php-7.3.8-nts-Win32-VC15-x86.zip_) into **C:\PHP**.
-3. Install **VC_redist.x86.exe** (Visual C++ Redistributable).
+Create a new folder **C:\PHP**.
+Download and extract **PHP 7.3.8** (_php-7.3.8-nts-Win32-VC15-x86.zip_) into **C:\PHP**.
+Install **VC_redist.x86.exe** (Visual C++ Redistributable).
 
 ---
 
 ### **Step 5: Installing MySQL Database Server**
-1. Download and install **MySQL 5.5.62** (_mysql-5.5.62-win32.msi_).
-2. Follow the setup wizard:
+Download and install **MySQL 5.5.62** (_mysql-5.5.62-win32.msi_).
+Follow the setup wizard:
    - **Select**: _Typical Setup_
    - **Enable**: _Launch Configuration Wizard_
    - **Choose**: _Standard Configuration_
    - **Set Root Password**: `Password1`
-3. Complete the installation by executing the final setup step.
+Complete the installation by executing the final setup step.
 
 ---
 
 ### **Step 6: Configuring PHP in IIS**
-1. Open **IIS Manager** as an Administrator.
-2. Navigate to **PHP Manager**.
-3. Select **Register new PHP version**, providing the path to **php-cgi.exe** inside **C:\PHP**.
-4. Restart IIS to apply changes.
+Open **IIS Manager** as an Administrator.
+Navigate to **PHP Manager**.
+Select **Register new PHP version**, providing the path to **php-cgi.exe** inside **C:\PHP**.
+Restart IIS to apply changes.
 
 ---
 
 ### **Step 7: Installing and Configuring osTicket**
-1. Extract and copy the **osTicket v1.15.8** "upload" folder into **C:\inetpub\wwwroot**.
-2. Rename the folder from **upload** to **osTicket**.
-3. Restart IIS and navigate to **Sites** → **Default Web Site** → **osTicket**.
-4. Click **Browse *:80** to open the osTicket web installer.
+Extract and copy the **osTicket v1.15.8** "upload" folder into **C:\inetpub\wwwroot**.
+Rename the folder from **upload** to **osTicket**.
+Restart IIS and navigate to **Sites** → **Default Web Site** → **osTicket**.
+Click **Browse *:80** to open the osTicket web installer.
 
 ---
 
 ### **Step 8: Enabling Required PHP Extensions**
-1. In IIS, navigate to **Sites** → **Default Web Site** → **osTicket**.
-2. Open **PHP Manager** → **Enable or Disable Extensions**.
-3. Enable the following extensions:
+In IIS, navigate to **Sites** → **Default Web Site** → **osTicket**.
+Open **PHP Manager** → **Enable or Disable Extensions**.
+Enable the following extensions:
    - **php_imap.dll**
    - **php_intl.dll**
    - **php_opcache.dll**
-4. Restart IIS after applying changes.
+Restart IIS after applying changes.
 
 ---
 
 ### **Step 9: Configuring osTicket Files and Permissions**
-1. Navigate to **C:\inetpub\wwwroot\osTicket\include**.
-2. Rename **ost-sampleconfig.php** to **ost-config.php**.
-3. Adjust file permissions:
+Navigate to **C:\inetpub\wwwroot\osTicket\include**.
+Rename **ost-sampleconfig.php** to **ost-config.php**.
+Adjust file permissions:
    - Right-click **ost-config.php** → **Properties** → **Security**.
    - Click **Advanced** → **Disable Inheritance**.
    - Select **Remove all inherited permissions**.
@@ -124,26 +116,26 @@ Use **Remote Desktop Connection (RDP)** to connect to the VM.
 ---
 
 ### **Step 10: Setting Up the osTicket Database**
-1. Install **HeidiSQL**.
-2. Open HeidiSQL and create a new session with:
+Install **HeidiSQL**.
+Open HeidiSQL and create a new session with:
    - **Username**: `root`
    - **Password**: `Password1`
-3. Inside HeidiSQL:
+Inside HeidiSQL:
    - Right-click on the left panel → **Create New** → **Database**.
    - Name it `osTicket`.
-4. Return to the osTicket web installer and enter the database details:
+Return to the osTicket web installer and enter the database details:
    - **Database Name**: `osTicket`
    - **Username**: `root`
    - **Password**: `Password1`
-5. Complete the osTicket installation.
+Complete the osTicket installation.
 
 ---
 
 ### **Step 11: Finalizing the Installation**
-1. Delete the **setup** directory located at:
+Delete the **setup** directory located at:
    - `C:\inetpub\wwwroot\osTicket\setup`
-2. Set **ost-config.php** to **Read-Only**.
-3. Log in to osTicket from your browser and begin configuring your helpdesk system.
+Set **ost-config.php** to **Read-Only**.
+Log in to osTicket from your browser and begin configuring your helpdesk system.
 
 ---
 
