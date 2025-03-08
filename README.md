@@ -34,7 +34,7 @@ Ensure the following components are readily available for a successful setup:
 
 ### **Step 1: Setting Up the Virtual Machine**
 Access the [Azure Portal](https://portal.azure.com/).
-Create a new Virtual Machine (VM)
+Create a new Virtual Machine (VM).
 Select **Windows 10 Pro, Version 22H2** and allocate a minimum of **2 vCPUs** and **16 GB RAM** for optimal performance.
 Once provisioned, locate the **public IP address** of your VM.
 Use **Remote Desktop Connection (RDP)** to connect to the VM.
