@@ -102,8 +102,8 @@ Restart IIS to apply changes.
 
 ### **Step 7: Installing and Configuring osTicket**
 Extract and copy the **osTicket v1.15.8** "upload" folder into **C:\inetpub\wwwroot**.
-![INETPUB](https://github.com/user-attachments/assets/94938766-56f1-4d23-a59a-3278eeef066c)
 Rename the folder from **upload** to **osTicket**.
+![INETPUB](https://github.com/user-attachments/assets/94938766-56f1-4d23-a59a-3278eeef066c)
 Restart IIS and navigate to **Sites** → **Default Web Site** → **osTicket**.
 Click **Browse *:80** to open the osTicket web installer.
 ![IIS - osTicket Browse 80](https://github.com/user-attachments/assets/f47571af-5bb8-4f05-9ccc-552ac955c5db)
