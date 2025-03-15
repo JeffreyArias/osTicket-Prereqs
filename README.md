@@ -71,6 +71,7 @@ Install **IIS Rewrite Module** (_rewrite_amd64_en-US.msi_).
 Create a new folder **C:\PHP**.
 Download and extract **PHP 7.3.8** (_php-7.3.8-nts-Win32-VC15-x86.zip_) into **C:\PHP**.
 Install **VC_redist.x86.exe** (Visual C++ Redistributable).
+![PHP Extract](https://github.com/user-attachments/assets/31aa6e3c-9c13-4a2b-a5dd-282aba57f849)
 
 ---
 
