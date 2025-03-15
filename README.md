@@ -50,9 +50,12 @@ Open **Control Panel** → **Programs** → **Turn Windows features on or off**.
 Locate **Internet Information Services (IIS)** and enable the following components:
    - **World Wide Web Services** → **Application Development Features**:
      - [✔] CGI
+![IIS - CGI](https://github.com/user-attachments/assets/574922e5-cbbf-4b79-a347-6ff0498bd3b8)
    - **Common HTTP Features** (Ensure all options are checked)
+![Common HTTP Features](https://github.com/user-attachments/assets/2c569e90-6c24-4ea3-a5a5-58f13e30bd2b)
 Apply changes and allow Windows to install IIS.
 Verify installation by opening a browser and navigating to **127.0.0.1**—you should see the IIS default page.
+![IIS Default Page](https://github.com/user-attachments/assets/92cc812e-cb14-4393-a4f8-92d90b490079)
 
 ---
 
