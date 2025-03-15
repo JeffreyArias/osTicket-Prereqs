@@ -107,6 +107,7 @@ Rename the folder from **upload** to **osTicket**.
 Restart IIS and navigate to **Sites** → **Default Web Site** → **osTicket**.
 Click **Browse *:80** to open the osTicket web installer.
 ![IIS - osTicket Browse 80](https://github.com/user-attachments/assets/f47571af-5bb8-4f05-9ccc-552ac955c5db)
+
 ---
 
 ### **Step 8: Enabling Required PHP Extensions**
