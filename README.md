@@ -62,6 +62,8 @@ Verify installation by opening a browser and navigating to **127.0.0.1**—you s
 ### **Step 3: Installing Required IIS Modules**
 Install **PHP Manager for IIS** (_PHPManagerForIIS_V1.5.0.msi_).
 Install **IIS Rewrite Module** (_rewrite_amd64_en-US.msi_).
+![PHP Manager - IIS Rewrite Module](https://github.com/user-attachments/assets/4c32cf54-ef11-469c-bb00-15e936f1dc22)
+
 
 ---
 
