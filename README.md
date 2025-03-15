@@ -79,9 +79,13 @@ Install **VC_redist.x86.exe** (Visual C++ Redistributable).
 Download and install **MySQL 5.5.62** (_mysql-5.5.62-win32.msi_).
 Follow the setup wizard:
    - **Select**: _Typical Setup_
+![Typical Setup](https://github.com/user-attachments/assets/1fa7060d-f913-4da7-b7fe-1a3c66e8791e)
    - **Enable**: _Launch Configuration Wizard_
+![Launch Config Wizard](https://github.com/user-attachments/assets/378f4fd2-be15-4c11-a61c-6a886d96a4f3)
    - **Choose**: _Standard Configuration_
+![Standard Config](https://github.com/user-attachments/assets/3c7da65a-2249-4a53-8885-3c2c25386b8a)
    - **Set Root Password**: `Password1`
+![Set Root Password](https://github.com/user-attachments/assets/54abe4cf-a96b-4656-8276-85cd2a0e73c5)
 Complete the installation by executing the final setup step.
 
 ---
@@ -89,7 +93,9 @@ Complete the installation by executing the final setup step.
 ### **Step 6: Configuring PHP in IIS**
 Open **IIS Manager** as an Administrator.
 Navigate to **PHP Manager**.
+![IIS PHP Manager](https://github.com/user-attachments/assets/47b4e1b9-97df-42d9-8ac7-1ad5b43fb9b3)
 Select **Register new PHP version**, providing the path to **php-cgi.exe** inside **C:\PHP**.
+![Register New PHP](https://github.com/user-attachments/assets/60394afb-323c-4dfb-b0e3-be4abc05aa4d)
 Restart IIS to apply changes.
 
 ---
