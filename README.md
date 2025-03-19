@@ -49,9 +49,9 @@ Use **Remote Desktop Connection (RDP)** to connect to the VM.
 Open **Control Panel** → **Programs** → **Turn Windows features on or off**.
 Locate **Internet Information Services (IIS)** and enable the following components:
    - **World Wide Web Services** → **Application Development Features**:
-     - [✔] CGI
+   - [✔] CGI
 ![IIS - CGI](https://github.com/user-attachments/assets/574922e5-cbbf-4b79-a347-6ff0498bd3b8)
-   - **Common HTTP Features** (Ensure all options are checked)
+**Common HTTP Features** (Ensure all options are checked)
 ![Common HTTP Features](https://github.com/user-attachments/assets/2c569e90-6c24-4ea3-a5a5-58f13e30bd2b)
 Apply changes and allow Windows to install IIS.
 Verify installation by opening a browser and navigating to **127.0.0.1**—you should see the IIS default page.
@@ -78,13 +78,13 @@ Install **VC_redist.x86.exe** (Visual C++ Redistributable).
 ### **Step 5: Installing MySQL Database Server**
 Download and install **MySQL 5.5.62** (_mysql-5.5.62-win32.msi_).
 Follow the setup wizard:
-   - **Select**: _Typical Setup_
+**Select**: _Typical Setup_
 ![Typical Setup](https://github.com/user-attachments/assets/1fa7060d-f913-4da7-b7fe-1a3c66e8791e)
-   - **Enable**: _Launch Configuration Wizard_
+**Enable**: _Launch Configuration Wizard_
 ![Launch Config Wizard](https://github.com/user-attachments/assets/378f4fd2-be15-4c11-a61c-6a886d96a4f3)
-   - **Choose**: _Standard Configuration_
+**Choose**: _Standard Configuration_
 ![Standard Config](https://github.com/user-attachments/assets/3c7da65a-2249-4a53-8885-3c2c25386b8a)
-   - **Set Root Password**: `Password1`
+**Set Root Password**: `Password1`
 ![Set Root Password](https://github.com/user-attachments/assets/54abe4cf-a96b-4656-8276-85cd2a0e73c5)
 Complete the installation by executing the final setup step.
 
@@ -115,9 +115,9 @@ In IIS, navigate to **Sites** → **Default Web Site** → **osTicket**.
 Open **PHP Manager** → **Enable or Disable Extensions**.
 ![Open PHP Manager](https://github.com/user-attachments/assets/95264703-7dc8-4175-8576-d2580c0a11bf)
 Enable the following extensions:
-   - **php_imap.dll**
-   - **php_intl.dll**
-   - **php_opcache.dll**
+**php_imap.dll**
+**php_intl.dll**
+**php_opcache.dll**
 ![Enable 3 Extensions](https://github.com/user-attachments/assets/3c7ddb9b-cf20-458d-ba30-00ca50decbc8)
 Restart IIS after applying changes.
 
