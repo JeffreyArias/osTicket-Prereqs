@@ -126,11 +126,19 @@ Restart IIS after applying changes.
 ### **Step 9: Configuring osTicket Files and Permissions**
 Navigate to **C:\inetpub\wwwroot\osTicket\include**.
 Rename **ost-sampleconfig.php** to **ost-config.php**.
+![Rename ost-sampleconfig](https://github.com/user-attachments/assets/f855b26f-a07e-415c-b766-60e47a3b375f)
 Adjust file permissions:
    - Right-click **ost-config.php** → **Properties** → **Security**.
+![Right-Click ost-config - Properties](https://github.com/user-attachments/assets/68cead07-0017-420b-bc00-cd59db5349e7)
+![Click Security - Advanced](https://github.com/user-attachments/assets/b32df2a0-acc2-467a-a2df-00b23313bc68)
    - Click **Advanced** → **Disable Inheritance**.
+![Disable Inheritance](https://github.com/user-attachments/assets/7dc4c90c-d835-40db-ba07-a53cd5ee45ad)
    - Select **Remove all inherited permissions**.
+![Remove all Inherited Permissions](https://github.com/user-attachments/assets/dfb9a59b-01e5-4abb-bcbe-af1ddd371952)
    - Add a new principal: **Everyone** with **Full Control**.
+![Add New Principal](https://github.com/user-attachments/assets/e6427de8-cca9-4313-b7d4-9c3b8029c63f)
+![Everyone with Full Control](https://github.com/user-attachments/assets/1b711de1-1e19-47fb-9eb8-67fae962a52e)
+![Everyone with Full Control 2](https://github.com/user-attachments/assets/d2af5e2f-047d-4054-ab3f-050ba635122b)
    - Apply changes.
 
 ---
