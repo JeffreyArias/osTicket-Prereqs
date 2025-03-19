@@ -159,13 +159,16 @@ Return to the osTicket web installer and enter the database details:
    - **Password**: `Password1`
 ![osTicket Web Installer Name User Pass](https://github.com/user-attachments/assets/71ea2776-6c48-4465-ae14-10f400ae17d3)
 Complete the osTicket installation.
+![osTicket Install Complete](https://github.com/user-attachments/assets/135b16f0-0efe-4a94-8660-4b092b14a2bd)
 
 ---
 
 ### **Step 11: Finalizing the Installation**
 Delete the **setup** directory located at:
    - `C:\inetpub\wwwroot\osTicket\setup`
+![Delete Setup Directory](https://github.com/user-attachments/assets/834a5240-bba8-44a5-87f0-de9a1d315f63)
 Set **ost-config.php** to **Read-Only**.
+![ost-config Read Only](https://github.com/user-attachments/assets/ef3fe384-7623-4752-93a8-493d58b25fa7)
 Log in to osTicket from your browser and begin configuring your helpdesk system.
 
 ---
