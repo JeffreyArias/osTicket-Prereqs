@@ -148,13 +148,16 @@ Install **HeidiSQL**.
 Open HeidiSQL and create a new session with:
    - **Username**: `root`
    - **Password**: `Password1`
+![HeidiSQL user pass](https://github.com/user-attachments/assets/c444f4a4-eb13-4b67-9183-f44b712daca8)
 Inside HeidiSQL:
    - Right-click on the left panel → **Create New** → **Database**.
    - Name it `osTicket`.
+![Create New Database](https://github.com/user-attachments/assets/99c6bfb3-c180-45ff-93dc-772421a86d39)
 Return to the osTicket web installer and enter the database details:
    - **Database Name**: `osTicket`
    - **Username**: `root`
    - **Password**: `Password1`
+![osTicket Web Installer Name User Pass](https://github.com/user-attachments/assets/71ea2776-6c48-4465-ae14-10f400ae17d3)
 Complete the osTicket installation.
 
 ---
